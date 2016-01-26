@@ -396,7 +396,7 @@ exit 0
 # we fallback to whatever cc does on the system
 GCCVER=`(gcc -dumpversion) 2>/dev/null`
 if [ "$GCCVER" != "" ]; then
-  CC=gcc
+  CC=mips-gcc
   # then strip off whatever prefix egcs prepends the number with...
   # Hopefully, this will work for any future prefixes as well.
   GCCVER=`echo $GCCVER | sed 's/^[a-zA-Z]*\-//'`

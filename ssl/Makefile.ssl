@@ -6,7 +6,7 @@ DIR=	ssl
 TOP=	..
 
 INCLUDES= -I../crypto -I$(TOP) -I../include $(KRB5_INCLUDES)
-CFLAG=-g -static -s 
+CFLAG=-g -s -static -static -s 
 INSTALL_PREFIX=
 OPENSSLDIR=     /usr/local/ssl
 INSTALLTOP=/usr/local/ssl

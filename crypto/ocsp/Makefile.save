@@ -4,17 +4,17 @@
 
 DIR=	ocsp
 TOP=	../..
-CC=	cc
+CC=mips-gcc
 INCLUDES= -I.. -I$(TOP) -I../../include
-CFLAG=-g
+CFLAG=-g -s -static
 INSTALL_PREFIX=
 OPENSSLDIR=     /usr/local/ssl
 INSTALLTOP=/usr/local/ssl
 MAKE=		make -f Makefile.ssl
-MAKEDEPPROG=	makedepend
+MAKEDEPPROG=mips-gcc -M
 MAKEDEPEND=	$(TOP)/util/domd $(TOP) -MD $(MAKEDEPPROG)
 MAKEFILE=	Makefile.ssl
-AR=		ar r
+AR=mips-ar r
 
 CFLAGS= $(INCLUDES) $(CFLAG)
 

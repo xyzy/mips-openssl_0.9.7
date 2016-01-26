@@ -4,18 +4,18 @@
 
 DIR=	rc5
 TOP=	../..
-CC=	cc
+CC=mips-gcc
 CPP=	$(CC) -E
 INCLUDES=
-CFLAG=-g
+CFLAG=-g -s -static
 INSTALL_PREFIX=
 OPENSSLDIR=     /usr/local/ssl
 INSTALLTOP=/usr/local/ssl
 MAKE=		make -f Makefile.ssl
-MAKEDEPPROG=	makedepend
+MAKEDEPPROG=mips-gcc -M
 MAKEDEPEND=	$(TOP)/util/domd $(TOP) -MD $(MAKEDEPPROG)
 MAKEFILE=	Makefile.ssl
-AR=		ar r
+AR=mips-ar r
 
 RC5_ENC=		rc5_enc.o
 # or use

@@ -59,7 +59,7 @@ OPENSSLDIR=/home/hzy19930315/cross-compiler-mips/ssl
 # equal 4.
 # PKCS1_CHECK - pkcs1 tests.
 
-CC= gcc
+CC=mips-gcc
 #CFLAG= -DL_ENDIAN -DTERMIO -O3 -fomit-frame-pointer -m486 -Wall -Wuninitialized -DSHA1_ASM -DMD5_ASM -DRMD160_ASM
 CFLAG= -DOPENSSL_NO_KRB5 -DB_ENDIAN -DTERMIO -O3 -fomit-frame-pointer -Wall
 DEPFLAG= 

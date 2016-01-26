@@ -94,7 +94,7 @@ TAGS: $(SOURCES) $(HEADERS)
 # The following definitions are system dependent (and hence defined
 # at the beginning of this Makefile, where they are more easily found):
 
-### CC=gcc
+### CC=mips-gcc
 ### SYSCFLAGS=-Wall -pedantic -g -O2
 ### SYSLIBS=-lxnet
 

@@ -80,7 +80,7 @@ thing you see in GNU packages, for example, and the standard tricks also work.
 Eg. to override "configure"'s choice of compiler, set the CC environment
 variable prior to running configure, eg.
 
-    CC=gcc ./configure
+    CC=mips-gcc ./configure
 
 would cause "gcc" to be used even if there is an otherwise preferable (to
 autoconf) native compiler on your system.
