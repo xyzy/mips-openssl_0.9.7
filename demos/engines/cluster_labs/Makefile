@@ -3,11 +3,11 @@ SRC=		hw_cluster_labs.c
 OBJ=		hw_cluster_labs.o
 HEADER=		hw_cluster_labs.h
 
-CC=		gcc
+CC=		mips-gcc
 PIC=		-fPIC
 CFLAGS=		-g -I../../../include $(PIC) -DENGINE_DYNAMIC_SUPPORT -DFLAT_INC
-AR=		ar r
-RANLIB=		ranlib
+AR=		mips-ar r
+RANLIB=		mips-ranlib
 
 LIB=		$(LIBNAME).a
 SHLIB=		$(LIBNAME).so

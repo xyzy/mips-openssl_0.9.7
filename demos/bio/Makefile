@@ -1,5 +1,5 @@
-CC=cc
-CFLAGS= -g -I../../include
+CC=mips-gcc
+CFLAGS= -g -s -static -I../../include
 LIBS= -L../.. ../../libssl.a ../../libcrypto.a
 EXAMPLES=saccept sconnect
 

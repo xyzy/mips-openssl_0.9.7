@@ -1,4 +1,4 @@
-CC=cc
+CC=mips-gcc
 CFLAGS= -g -I../../include -Wall
 LIBS=  -L../.. -lcrypto
 EXAMPLES=sign

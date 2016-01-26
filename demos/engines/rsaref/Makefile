@@ -3,11 +3,11 @@ SRC=		rsaref.c
 OBJ=		rsaref.o
 HEADER=		rsaref.h
 
-CC=		gcc
+CC=		mips-gcc
 PIC=		-fPIC
 CFLAGS=		-g -I../../../include $(PIC) -DENGINE_DYNAMIC_SUPPORT
-AR=		ar r
-RANLIB=		ranlib
+AR=		mips-ar r
+RANLIB=		mips-ranlib
 
 LIB=		$(LIBNAME).a
 SHLIB=		$(LIBNAME).so

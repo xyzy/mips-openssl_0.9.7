@@ -1,4 +1,4 @@
-CC=cc
+CC=mips-gcc
 CFLAGS= -g -I../../include
 #LIBS=  -L../.. -lcrypto -lssl
 LIBS= -L../.. ../../libssl.a ../../libcrypto.a

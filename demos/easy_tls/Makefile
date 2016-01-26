@@ -23,7 +23,7 @@ all: test TAGS
 # definitions should need customizing:
 
 OPENSSLDIR=../..
-CC=gcc
+CC=mips-gcc
 
 SYSCFLAGS=whatever
 SYSLIBS=whatever

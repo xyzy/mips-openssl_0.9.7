@@ -4,7 +4,7 @@
 
 DIR=	ssl
 TOP=	..
-CC=mips-gcc
+
 INCLUDES= -I../crypto -I$(TOP) -I../include $(KRB5_INCLUDES)
 CFLAG=-g -static -s 
 INSTALL_PREFIX=

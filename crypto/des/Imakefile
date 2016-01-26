@@ -25,7 +25,7 @@ SRCDIR=$(SRCTOP)/lib/des
 
 DBG= -O
 INCLUDE= -I$(SRCDIR)
-CC= cc
+
 
 library_obj_rule()
 
